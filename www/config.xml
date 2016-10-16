@@ -3,8 +3,8 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "cat.numancia.control_esp8266"
-        versionCode = "10" 
-        version     = "0.0.10" >
+        versionCode = "11" 
+        version     = "0.0.11" >
 	
 	<!-- versionCode is optional and Android only -->
 
@@ -65,6 +65,8 @@
 	<gap:plugin name="cordova-plugin-inappbrowser" source='npm' />
 	<gap:plugin name="cordova-plugin-x-toast" source='npm' />
 	<gap:plugin name="ionic-plugin-keyboard" source='npm' />
+	
+	<gap:plugin name="cordova-plugin-chrome-apps-sockets-tcp" source='npm' />
 	
 	<preference name="android-build-tool" value="gradle" /> 
 	<gap:plugin name="cordova-plugin-statusbar" source='npm' />
