@@ -17,18 +17,12 @@ $(document).on('deviceready', function() {
 	}, false); 
 	
 	document.addEventListener('touchstart', function(e) {
-	
 		// alert("Clicat") ;
-		
-	
 	});	
 	
 	document.addEventListener('touchmove', function(e) {
-	
 		// alert("has arrastrat el dit");
-		
-
-	  });
+	 });
 	  
 	  
 	$('#connectButton').click(function() {
