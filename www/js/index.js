@@ -18,14 +18,14 @@ $(document).on('deviceready', function() {
 	
 	document.addEventListener('touchstart', function(e) {
 	
-		alert("Clicat") ;
+		// alert("Clicat") ;
 		
 	
 	});	
 	
 	document.addEventListener('touchmove', function(e) {
 	
-			alert("mogut_dit");
+		alert("has arrastrat el dit");
 		
 
 	  });
