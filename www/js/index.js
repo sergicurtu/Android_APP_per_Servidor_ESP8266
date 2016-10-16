@@ -77,7 +77,7 @@ app.connect = function() {
 
 			 console.log('Connectat a ' + IPAddress)
 			 var info = "Connectat a " + IPAddress + " al sockedID : " + app.socketId 
-			 navigator.notification.alert(info, function() {})
+			 //navigator.notification.alert(info, function() {})
 			 			
 			 $('#connectingView').hide()
 			 $('#controlView').show()
@@ -87,7 +87,7 @@ app.connect = function() {
 
 			var errorMessage = 'Ha fallat la connexió a ' + app.IPAdress + ' en el port ' + app.PORT
 			console.log(errorMessage)
-			navigator.notification.alert(errorMessage, function() {})
+			//navigator.notification.alert(errorMessage, function() {})
 			$('#connectingView').hide()
 			$('#startView').show()
 		}
@@ -108,12 +108,12 @@ app.sendString = function(sendString) {
 				var errorMessage = 'Ha fallat l´enviament de dades'
 
 				console.log(errorMessage)
-				navigator.notification.alert(errorMessage, function() {})
+				//navigator.notification.alert(errorMessage, function() {})
 			}
 			else
 			{
 				var info = 'Enviat el valor : ' + sendInfo + ' i obtingut el resultat : ' + sendInfo.resultCode 
-				navigator.notification.alert(info, function() {})
+				//navigator.notification.alert(info, function() {})
 			}
 		}
 			
