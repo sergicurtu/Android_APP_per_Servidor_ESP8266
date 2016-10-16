@@ -25,7 +25,7 @@ $(document).on('deviceready', function() {
 	
 	document.addEventListener('touchmove', function(e) {
 	
-		alert("has arrastrat el dit");
+		// alert("has arrastrat el dit");
 		
 
 	  });
