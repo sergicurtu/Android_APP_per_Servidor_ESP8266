@@ -2,18 +2,18 @@
     
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "cat.numancia.JocCanvas"
-        versionCode = "1000" 
-        version     = "1.0.00" >
+        id          = "cat.numancia.control_esp8266"
+        versionCode = "1" 
+        version     = "0.0.01" >
 	
 	<!-- versionCode is optional and Android only -->
 
 	<preference name="phonegap-version" value="cli-5.2.0" />
 
-    <name>Canvas_Game</name>
+    <name>Control ESP8266</name>
 
    <description>
-       Test per jocs canvas
+       Test per control.lar un NodeMCU 8266
     </description>
 
     <author href="https://numancia.cat/intranet" email="sergi.curtu@numancia.cat">
