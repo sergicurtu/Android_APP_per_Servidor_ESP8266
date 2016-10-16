@@ -3,8 +3,8 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "cat.numancia.control_esp8266"
-        versionCode = "4" 
-        version     = "0.0.04" >
+        versionCode = "5" 
+        version     = "0.0.05" >
 	
 	<!-- versionCode is optional and Android only -->
 
@@ -65,8 +65,14 @@
 	<gap:plugin name="cordova-plugin-inappbrowser" source='npm' />
 	<gap:plugin name="cordova-plugin-x-toast" source='npm' />
 	<gap:plugin name="ionic-plugin-keyboard" source='npm' />
+	
+	<gap:plugin name="cordova-plugin-statusbar" source='npm' />
+	<gap:plugin name="cordova-plugin-google-analytics" source='npm' />
+	
+	<!-- no funciones des de novembre 2016 
 	<gap:plugin name="com.phonegap.plugin.statusbar" />
 	<gap:plugin name="com.adobe.plugins.gaplugin" /> 
+	-->
 	
 	<!-- FastCanvas NO FUNCIONA npm-->
 	<!-- <gap:plugin name="com.adobe.plugins.FastCanvas" source='npm' /> -->
