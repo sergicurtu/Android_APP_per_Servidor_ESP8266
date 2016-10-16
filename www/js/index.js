@@ -76,7 +76,9 @@ app.connect = function() {
 		if (result === 0) {
 
 			 console.log('Connectat a ' + IPAddress)
-					 
+			 var info = "Connectat a " + IPAddress + " al sockedID : " + app.socketId 
+			 navigator.notification.alert(info, function() {})
+			 			
 			 $('#connectingView').hide()
 			 $('#controlView').show()
 			
@@ -108,7 +110,13 @@ app.sendString = function(sendString) {
 				console.log(errorMessage)
 				navigator.notification.alert(errorMessage, function() {})
 			}
+			else
+			{
+				var info = 'Enviat el valor : ' + sendInfo + ' i obtingut el resultat : ' + sendInfo.resultCode 
+				navigator.notification.alert(info, function() {})
+			}
 		}
+			
 	)
 }
 
@@ -138,6 +146,7 @@ app.disconnect = function() {
 
 	chrome.sockets.tcp.close(app.socketId, function() {
 		console.log('Finalitzat el tancament del Socket TCP.')
+		navigator.notification.alert('Finalitzat el tancament del Socket TCP.', function() {})
 	})
 
 	$('#controlView').hide()
