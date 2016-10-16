@@ -32,7 +32,7 @@
    	<!-- Per evitar gir de pantalla -->
 	<preference name="orientation"      value="portrait" />
 	
-	<preference name="android-minSdkVersion" value="14" /> <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
+	<preference name="android-minSdkVersion" value="14" /> <!-- 16.10.2016  android: MIN SDK version supported on the target device. MAX version is blank by default. -->
 	<preference name="target-device"    value="universal" />
 	<preference name="fullscreen"       value="true" />
 	<preference name="webviewbounce" value="false" /> <!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
