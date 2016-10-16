@@ -66,6 +66,7 @@
 	<gap:plugin name="cordova-plugin-x-toast" source='npm' />
 	<gap:plugin name="ionic-plugin-keyboard" source='npm' />
 	
+	<preference name="android-build-tool" value="gradle" /> 
 	<gap:plugin name="cordova-plugin-statusbar" source='npm' />
 	<gap:plugin name="cordova-plugin-google-analytics" source='npm' />
 	
