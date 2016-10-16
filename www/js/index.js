@@ -123,6 +123,10 @@ app.ledOn = function() {
 	$('#led').unbind('click').click(function(){
 		app.ledOff()
 	})	
+	
+	app.disconnect()
+	app.connect()
+	
 }
 
 app.ledOff = function() {
@@ -134,6 +138,9 @@ app.ledOff = function() {
 	$('#led').unbind('click').click(function(){
 		app.ledOn()
 	})
+	
+	app.disconnect()
+	app.connect()
 }
 
 app.disconnect = function() {
