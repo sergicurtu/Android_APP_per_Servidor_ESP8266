@@ -3,14 +3,14 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "cat.numancia.control_esp8266"
-        versionCode = "6" 
-        version     = "0.0.06" >
+        versionCode = "7" 
+        version     = "0.0.07" >
 	
 	<!-- versionCode is optional and Android only -->
 
 	
 
-    <name>Control ESP8266</name>
+   <name>Control ESP8266</name>
 
    <description>
        Test per control.lar un NodeMCU 8266
