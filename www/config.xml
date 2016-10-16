@@ -3,12 +3,12 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "cat.numancia.control_esp8266"
-        versionCode = "2" 
-        version     = "0.0.02" >
+        versionCode = "3" 
+        version     = "0.0.03" >
 	
 	<!-- versionCode is optional and Android only -->
 
-	<preference name="phonegap-version" value="cli-5.2.0" />
+	<preference name="phonegap-version" value="cli-6.3.0" />
 
     <name>Control ESP8266</name>
 
