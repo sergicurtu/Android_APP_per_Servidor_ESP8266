@@ -54,10 +54,10 @@ app.connect = function() {
 
 	var IPAddress = $('#IPAddress').val()
 
-	console.log('Trying to connect to ' + IPAddress)
+	console.log('Estem intentant la connexió a ' + IPAddress + ' en el port ' + app.PORT )
 
 	$('#startView').hide()
-	$('#connectingStatus').text('Connecting to ' + IPAddress)
+	$('#connectingStatus').text('Connectant a ' + IPAddress)
 	$('#connectingView').show()
 
 	chrome.sockets.tcp.create(function(createInfo) {
@@ -75,7 +75,7 @@ app.connect = function() {
 	
 		if (result === 0) {
 
-			 console.log('Connected to ' + IPAddress)
+			 console.log('Connectat a ' + IPAddress)
 					 
 			 $('#connectingView').hide()
 			 $('#controlView').show()
@@ -83,7 +83,7 @@ app.connect = function() {
 		}
 		else {
 
-			var errorMessage = 'Failed to connect to ' + app.IPAdress
+			var errorMessage = 'Ha fallat la connexió a ' + app.IPAdress + ' en el port ' + app.PORT
 			console.log(errorMessage)
 			navigator.notification.alert(errorMessage, function() {})
 			$('#connectingView').hide()
@@ -94,7 +94,7 @@ app.connect = function() {
 
 app.sendString = function(sendString) {
 
-	console.log('Trying to send:' + sendString)	
+	console.log('Intentant enviar :' + sendString)	
 
 	chrome.sockets.tcp.send (
 		app.socketId,
@@ -103,7 +103,7 @@ app.sendString = function(sendString) {
 
 			if (sendInfo.resultCode < 0) {
 
-				var errorMessage = 'Failed to send data'
+				var errorMessage = 'Ha fallat l´enviament de dades'
 
 				console.log(errorMessage)
 				navigator.notification.alert(errorMessage, function() {})
@@ -137,7 +137,7 @@ app.ledOff = function() {
 app.disconnect = function() {
 
 	chrome.sockets.tcp.close(app.socketId, function() {
-		console.log('TCP Socket close finished.')
+		console.log('Finalitzat el tancament del Socket TCP.')
 	})
 
 	$('#controlView').hide()
