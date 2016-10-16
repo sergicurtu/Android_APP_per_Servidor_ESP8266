@@ -146,7 +146,7 @@ app.disconnect = function() {
 
 	chrome.sockets.tcp.close(app.socketId, function() {
 		console.log('Finalitzat el tancament del Socket TCP.')
-		navigator.notification.alert('Finalitzat el tancament del Socket TCP.', function() {})
+		//navigator.notification.alert('Finalitzat el tancament del Socket TCP.', function() {})
 	})
 
 	$('#controlView').hide()
