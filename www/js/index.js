@@ -125,7 +125,8 @@ app.ledOn = function() {
 	})	
 	
 	app.disconnect()
-	app.connect()
+	$('#connectingView').hide()
+	$('#startView').show()
 	
 }
 
@@ -140,7 +141,8 @@ app.ledOff = function() {
 	})
 	
 	app.disconnect()
-	app.connect()
+	$('#connectingView').hide()
+	$('#startView').show()
 }
 
 app.disconnect = function() {
